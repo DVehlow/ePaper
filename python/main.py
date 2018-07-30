@@ -40,7 +40,7 @@ def main():
     # For simplicity, the arguments are explicit numerical coordinates
     image = Image.new('1', (EPD_WIDTH, EPD_HEIGHT), 1)    # 1: clear the frame
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype('/usr/share/fonts/truetype/freefont/FreeMonoBold.ttf', 24)
+    font = ImageFont.truetype("arial.ttf", 15)
     draw.rectangle((0, 6, 640, 30), fill = 0)
     draw.text((200, 10), 'e-Paper demo', font = font, fill = 255)
     draw.rectangle((200, 80, 600, 280), fill = 0)
